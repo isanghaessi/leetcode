@@ -5,19 +5,27 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    result = 0
-    
-    def diameterOfBinaryTree(self, root: TreeNode) -> int:
-        def preOrder(node, length):
+    def diameterOfBinaryTree(self, root: Optional[TreeNode]) -> int:
+        def dfs(node, count):
+            nonlocal answer
+            
             if node == None:
                 
-                return length
-            left_length = preOrder(node.left, length)
-            right_length = preOrder(node.right, length)
-            self.result = max(self.result, left_length + right_length)
+                return count
             
-            return max(left_length + 1, right_length + 1)
+            left = dfs(node.left, count + 1)
+            right = dfs(node.right, count + 1)
+            answer = max(answer, left + right - count * 2 - 2)
+            
+            return max(left, right)
 
-        preOrder(root, 0)
+            
+        if not root:
+            
+            return 0
+        answer = 0
+        left = dfs(root.left, 0)
+        right = dfs(root.right, 0)
+        answer = max(answer, left + right)
         
-        return self.result
+        return answer
