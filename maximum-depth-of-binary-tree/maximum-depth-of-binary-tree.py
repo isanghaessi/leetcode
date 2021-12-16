@@ -1,3 +1,5 @@
+import collections
+
 # Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
@@ -5,20 +7,23 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    result = 0
-    
-    def maxDepth(self, root: TreeNode) -> int:
-        def checkDepth(tree, depth):
-            if tree == None:
-                
-                return
-            if tree.left == None and tree.right == None:
-                
-                self.result = max(self.result, depth)
-            checkDepth(tree.left, depth + 1)
-            checkDepth(tree.right, depth + 1)
+    def maxDepth(self, root: Optional[TreeNode]) -> int:
+        if not root:
+            
+            return 0
+        answer = 1
+        q = collections.deque()
+        q.append((root, 1))
+        while len(q) > 0:
+            answer = q[-1][1]
+            new_q = collections.deque()
+            while len(q) > 0:
+                current, height = q.pop()
+                if current.left:
+                    new_q.appendleft((current.left, height + 1))
+                if current.right:
+                    new_q.appendleft((current.right, height + 1))
+            q = new_q
             
         
-        checkDepth(root, 1)
-        
-        return self.result
+        return answer
