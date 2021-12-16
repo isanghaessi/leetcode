@@ -5,29 +5,31 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    result = 0
-    
-    def longestUnivaluePath(self, root: TreeNode) -> int:
-        def dfsLongest(node, length):
-            if node == None:
-                
-                return None, length
-            left_v, left_l = dfsLongest(node.left, length)
-            right_v, right_l = dfsLongest(node.right, length)
-            if left_v == right_v == node.val:
-                length = max(left_l, right_l) + 1
-                self.result = max(self.result, left_l + right_l + 2)
-            elif left_v == node.val:
-                length = left_l + 1
-            elif right_v == node.val:
-                length = right_l + 1
-            else:
-                length = 0
-            self.result = max(self.result, length)
-                
-            return node.val, length
+    def longestUnivaluePath(self, root: Optional[TreeNode]) -> int:
+        def dfs(node):
+            nonlocal answer
             
+            if not node:
+                
+                return None, 0
+            left_val, left_count = dfs(node.left)
+            right_val, right_count = dfs(node.right)
+            answer_count = 1
+            return_count = 1
+            if left_val == node.val:
+                answer_count += left_count
+                return_count += left_count
+            if right_val == node.val:
+                answer_count += right_count
+                return_count = max(return_count, right_count + 1)
+            answer = max(answer, answer_count - 1)
             
-        dfsLongest(root, 0)
+            return node.val, return_count
         
-        return self.result
+        if not root:
+            
+            return 0
+        answer = 0
+        dfs(root)
+        
+        return answer
