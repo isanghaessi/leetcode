@@ -14,7 +14,6 @@ class Solution:
         queue = collections.deque([root])
         while len(queue) > 0:
             queueVals = [q.val for q in queue]
-            print(queueVals)
             if queueVals != queueVals[::-1]:
                 
                 return False
