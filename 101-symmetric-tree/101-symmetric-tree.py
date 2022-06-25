@@ -8,22 +8,12 @@ import collections
 #         self.right = right
 class Solution:
     def isSymmetric(self, root: Optional[TreeNode]) -> bool:
-        if root == None:
-            
-            return True
-        queue = collections.deque([root])
-        while len(queue) > 0:
-            queueVals = [q.val for q in queue]
-            if queueVals != queueVals[::-1]:
-                
+        def isSameTree(p, q):   
+            if not p and not q:
+                return True
+            elif not p or not q:
                 return False
-            nextQueue = collections.deque([])
-            while len(queue):
-                node = queue.pop()
-                if node.val != 'null':
-                    nextQueue.append(node.left if node.left != None else TreeNode('null'))
-                    nextQueue.append(node.right if node.right != None else TreeNode('null'))
-            queue = nextQueue
         
-        return True
-            
+            return p.val == q.val and isSameTree(p.left, q.right) and isSameTree(p.right, q.left)
+                
+        return isSameTree(root.left, root.right)
