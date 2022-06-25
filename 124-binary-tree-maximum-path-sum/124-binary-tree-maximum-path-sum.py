@@ -9,7 +9,6 @@ class Solution:
     
     def maxPathSum(self, root: Optional[TreeNode]) -> int:
         def findMax(node):
-            global result
             
             if node == None:
                 
@@ -23,7 +22,5 @@ class Solution:
         
         leftMax = findMax(root.left)
         rightMax = findMax(root.right)
-        
-        print(self.result, leftMax, rightMax, leftMax + root.val + rightMax)
         
         return max(self.result, leftMax, rightMax, root.val, leftMax + root.val, root.val + rightMax, leftMax + root.val + rightMax)
