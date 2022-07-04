@@ -7,6 +7,6 @@ class Solution:
                 alphaLogs.append(log)
             else:
                 numberLogs.append(log)
-        alphaLogs.sort(key = lambda a:(' '.join(a.split(' ')[1:]), a.split(' ')[0]))
+        alphaLogs.sort(key = lambda a:(a.split()[1:], a.split()[0]))
         
         return alphaLogs + numberLogs
