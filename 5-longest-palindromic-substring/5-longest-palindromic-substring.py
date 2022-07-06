@@ -7,8 +7,6 @@ class Solution:
             l, r = i - maxLR, i + maxLR
             while l >= 0 and r < len(s):
                 currentS = s[l:r + 1]
-                if (s[i] == 'n'):
-                    print(currentS)
                 if currentS != currentS[::-1]:
                     
                     break
