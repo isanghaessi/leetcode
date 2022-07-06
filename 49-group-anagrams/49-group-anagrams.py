@@ -2,8 +2,8 @@ from collections import *
 
 class Solution:
     def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
-        counterDict = defaultdict(list)
+        answerDict = defaultdict(list)
         for s in strs:
-            counterDict[tuple(sorted(Counter(s).items()))].append(s)
+            answerDict[tuple(sorted(s))].append(s)
             
-        return counterDict.values()
+        return answerDict.values()
