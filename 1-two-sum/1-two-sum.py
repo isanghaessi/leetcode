@@ -6,6 +6,7 @@ class Solution:
         for i, num in enumerate(nums):
             numsDict[num].append(i)
         for num in list(numsDict.keys()):
-            if (len(numsDict[target - num]) > 0 and target - num != num) or (len(numsDict[target - num]) > 1 and target - num == num):
+            leftI = numsDict[num].pop()
+            if len(numsDict[target - num]) > 0:
                 
-                return (numsDict[num].pop(), numsDict[target - num].pop())
+                return (leftI, numsDict[target - num].pop())
