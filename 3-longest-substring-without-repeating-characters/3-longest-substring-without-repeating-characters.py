@@ -1,16 +1,22 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         answer = 0
-        for i in range(len(s)):
-            alphaDict = {}
-            count = 0
-            for j in range(i, len(s)):
-                if s[j] not in alphaDict:
-                    alphaDict[s[j]] = True
-                    count += 1
-                else:
+        alphaDict = {}
+        left = 0
+        while left < len(s):
+            right = left
+            while right < len(s):
+                if s[right] in alphaDict:
+                    answer = max(answer, right - left)
+                    left = alphaDict[s[right]] + 1
+                    alphaDict = {}
                     
                     break
-            answer = max(answer, count)
-        
+                alphaDict[s[right]] = right
+                right += 1
+            if right >= len(s):
+                answer = max(answer, right - left)
+                
+                break
+            
         return answer
