@@ -1,5 +1,4 @@
 from heapq import *
-from collections import *
 
 # Definition for singly-linked list.
 # class ListNode:
@@ -9,18 +8,15 @@ from collections import *
 class Solution:
     def mergeKLists(self, lists: List[Optional[ListNode]]) -> Optional[ListNode]:
         heapQ = []
-        listDict = defaultdict(list)
-        for l in [l for l in lists if l]:
-            listDict[l.val].append(l)
-            heappush(heapQ, l.val)
+        for i, l in enumerate(lists):
+            if l:
+                heappush(heapQ, (l.val, i, l))
         answer = node = ListNode()
         while len(heapQ) > 0:
-            value = heappop(heapQ)
+            value, i, head = heappop(heapQ)
             node.next = ListNode(value)
             node = node.next
-            valueHead = listDict[value].pop()
-            if valueHead and valueHead.next:
-                listDict[valueHead.next.val].append(valueHead.next)
-                heappush(heapQ, valueHead.next.val)
+            if head and head.next:
+                heappush(heapQ, (head.next.val, i, head.next))
         
         return answer.next
