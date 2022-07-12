@@ -1,22 +1,13 @@
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
+        used = {}
         answer = 0
-        alphaDict = {}
         left = 0
-        while left < len(s):
-            right = left
-            while right < len(s):
-                if s[right] in alphaDict:
-                    answer = max(answer, right - left)
-                    left = alphaDict[s[right]] + 1
-                    alphaDict = {}
-                    
-                    break
-                alphaDict[s[right]] = right
-                right += 1
-            if right >= len(s):
-                answer = max(answer, right - left)
-                
-                break
-            
+        for i, c in enumerate(s):
+            if c in used and left <= used[c]:
+                left = used[c] + 1
+            else:
+                answer = max(answer, i - left + 1)
+            used[c] = i
+        
         return answer
