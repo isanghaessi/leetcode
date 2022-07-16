@@ -1,14 +1,7 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        def dfs(path):
-            sortedPath = tuple(sorted(path))
-            if sortedPath in visitedPath:
-                
-                return
-            else:
-                visitedPath[tuple(sorted(path))] = True
-                
-            if sum(path) > target:  
+        def dfs(candidates, path):   
+            if sum(path) > target:
                 
                 return
             if sum(path) == target:
@@ -16,12 +9,11 @@ class Solution:
                 
                 return
             
-            for candidate in candidates:
-                dfs((*path, candidate))
+            for i, candidate in enumerate(candidates):
+                dfs(candidates[i:], (*path, candidate))
         
         
         answer = []
-        visitedPath = {}
-        dfs(())
+        dfs(candidates, ())
         
         return answer
