@@ -5,25 +5,17 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:
-        def dfs(node1, node2):
-            if not node1 and not node2:
-                
-                return None
-
-            if not node1:
-                node1 = TreeNode(val = 0)
-            if not node2:
-                node2 = TreeNode(val = 0)
-            newNode = TreeNode(node1.val + node2.val)
-            newNode.left = dfs(node1.left, node2.left)
-            newNode.right = dfs(node1.right, node2.right)            
-            
-            return newNode
-            
-            
+    def mergeTrees(self, root1: Optional[TreeNode], root2: Optional[TreeNode]) -> Optional[TreeNode]:            
         if not root1 and not root2:
             
             return None
         
-        return dfs(root1, root2)
+        if not root1:
+            root1 = TreeNode(val = 0)
+        if not root2:
+            root2 = TreeNode(val = 0)
+        newNode = TreeNode(root1.val + root2.val)
+        newNode.left = self.mergeTrees(root1.left, root2.left)
+        newNode.right = self.mergeTrees(root1.right, root2.right)
+        
+        return newNode
