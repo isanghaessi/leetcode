@@ -19,7 +19,6 @@ class Solution:
             newNode.left = dfs(node1.left, node2.left)
             newNode.right = dfs(node1.right, node2.right)            
             
-            
             return newNode
             
             
