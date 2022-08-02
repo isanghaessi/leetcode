@@ -25,12 +25,10 @@ class Solution:
             else:
                 previousSlow.next = None
                 
-                return _merge(head, slow)
+                return _merge(merge(head), merge(slow))
             
             
         def _merge(node1, node2):
-            node1 = merge(node1)
-            node2 = merge(node2)
             result = node =  ListNode()
             while node1 and node2:
                 if node1.val < node2.val:
