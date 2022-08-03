@@ -15,9 +15,8 @@ class Solution:
             if move.next and move.next is not current:
                 previous.next = current.next
                 move.next, current.next =  current, move.next
-            current = nextCurrent
-            previous = result
-            while previous.next is not current:
+            else:
                 previous = previous.next
+            current = nextCurrent
         
         return result.next
