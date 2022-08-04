@@ -11,7 +11,6 @@ class Solution:
         right = len(nums) - 1
         i = 0
         while i <= right:
-            print(i, left, right, nums)
             if nums[i] == 0:
                 swap(i, left)
                 left += 1
