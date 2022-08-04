@@ -3,22 +3,21 @@ class Solution:
         """
         Do not return anything, modify nums in-place instead.
         """
-        zeros = []
-        ones = []
-        twos = []
-        for num in nums:
-            if num == 0:
-                zeros.append(num)
-            elif num == 1:
-                ones.append(num)
+        def swap(i, j):
+            nums[i], nums[j] = nums[j], nums[i]
+            
+            
+        left = 0
+        right = len(nums) - 1
+        i = 0
+        while i <= right:
+            print(i, left, right, nums)
+            if nums[i] == 0:
+                swap(i, left)
+                left += 1
+                i += 1
+            elif nums[i] == 2:
+                swap(i, right)
+                right -= 1
             else:
-                twos.append(num)
-        numsLen = len(nums)
-        for zero in zeros[::-1]:
-            nums.append(zero)
-        for one in ones[::-1]:
-            nums.append(one)
-        for two in twos[::-1]:
-            nums.append(two)
-        for _ in range(numsLen):
-            del nums[0]
+                i += 1
