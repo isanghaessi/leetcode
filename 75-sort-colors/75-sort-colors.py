@@ -21,4 +21,4 @@ class Solution:
         for two in twos[::-1]:
             nums.append(two)
         for _ in range(numsLen):
-            nums.pop(0)
+            del nums[0]
