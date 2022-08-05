@@ -1,17 +1,17 @@
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:
-        def binSearch(nums, left, right, target):
+        def binSearch(left, right, target):
             if left > right:
                 
                 return - 1
             
             index = (left + right) // 2
-            if nums[index] < target:
+            if numbers[index] < target:
                 
-                return binSearch(nums, index + 1, right, target)
-            elif nums[index] > target:
+                return binSearch(index + 1, right, target)
+            elif numbers[index] > target:
                 
-                return binSearch(nums, left, index - 1, target)
+                return binSearch(left, index - 1, target)
             else:
                 
                 return index
@@ -19,8 +19,8 @@ class Solution:
         
         i = 0
         while i < len(numbers):
-            j = binSearch(numbers[i + 1:], 0, len(numbers) - i - 2, target - numbers[i])
+            j = binSearch(i + 1, len(numbers) - 1, target - numbers[i])
             if j >= 0:
                 
-                return (i + 1, i + j + 2)
+                return (i + 1, j + 1)
             i += 1
