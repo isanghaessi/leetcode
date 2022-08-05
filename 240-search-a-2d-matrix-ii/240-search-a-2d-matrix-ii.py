@@ -2,9 +2,10 @@ from bisect import *
 
 class Solution:
     def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
-        matrixSet = set()
         for m in matrix:
             for _m in m:
-                matrixSet.add(_m)
+                if _m == target:
+                    
+                    return True
         
-        return target in matrixSet
+        return False
