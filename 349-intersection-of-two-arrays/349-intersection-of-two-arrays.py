@@ -24,7 +24,6 @@ class Solution:
         for num in nums:
             if num not in answer:
                 index = binSearch(targetNums, 0, len(targetNums) - 1, num)
-                print(num, index)
                 if index >= 0:
                     answer.append(num)
         
