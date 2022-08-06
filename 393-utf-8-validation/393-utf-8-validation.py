@@ -3,7 +3,6 @@ from collections import *
 class Solution:
     def validUtf8(self, data: List[int]) -> bool:
         def checkPrefix(binStr, prefix):
-            print(binStr, prefix)
             
             return binStr[:len(prefix)] == prefix
         
@@ -14,8 +13,6 @@ class Solution:
             binStr = bin(data.popleft())[2:]
             while len(binStr) < 8:
                 binStr = '0' + binStr
-            print('---')
-            print(binStr)
             if binStr[0] == '1':
                 prefix = ''
                 i = 0
