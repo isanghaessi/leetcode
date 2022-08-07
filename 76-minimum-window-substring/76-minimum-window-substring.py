@@ -13,7 +13,7 @@ class Solution:
         
         answer = s
         l, r = 0, 0
-        counterT = dict(Counter(t))
+        counterT = Counter(t)
         currentCounter = defaultdict(lambda : 0)
         while r < len(s) and l <= r:
             while r < len(s) and not check(currentCounter):
