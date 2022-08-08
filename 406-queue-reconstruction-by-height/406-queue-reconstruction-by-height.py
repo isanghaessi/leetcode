@@ -1,15 +1,13 @@
-from collections import *
+from heapq import *
 
 class Solution:
     def reconstructQueue(self, people: List[List[int]]) -> List[List[int]]:
+        heap = []
+        for h, k in people:
+            heappush(heap, (-h, k))
         answer = []
-        for h, k in sorted(people, key = lambda a: (-a[0], a[1])):
-            i = 0
-            count = 0
-            while i < len(answer) and count < k:
-                if answer[i][0] >= h:
-                    count += 1
-                i += 1
-            answer.insert(i, (h, k))
+        while len(heap) > 0:
+            h, k = heappop(heap)
+            answer.insert(k, (-h, k))
         
         return answer
