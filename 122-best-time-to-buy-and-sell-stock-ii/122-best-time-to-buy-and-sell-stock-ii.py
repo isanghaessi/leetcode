@@ -1,11 +1,11 @@
 class Solution:
     def maxProfit(self, prices: List[int]) -> int:
         answer = 0
-        currentMin = float('inf')
-        for price in prices:
-            if currentMin < price:
-                answer += price - currentMin
-            if currentMin != price:
-                currentMin = price
+        i = 1
+        while i < len(prices):
+            current = prices[i] - prices[i - 1]
+            if current > 0:
+                answer += current
+            i += 1
         
         return answer
