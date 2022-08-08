@@ -4,7 +4,6 @@ class Solution:
         currentMin = float('inf')
         for price in prices:
             if currentMin < price:
-                print(price)
                 answer += price - currentMin
             if currentMin != price:
                 currentMin = price
