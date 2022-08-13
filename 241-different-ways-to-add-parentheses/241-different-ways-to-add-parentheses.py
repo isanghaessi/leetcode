@@ -1,12 +1,16 @@
 class Solution:
     operations = ['+', '-', '*', '/']
+    dp = {}
     
     def diffWaysToCompute(self, expression: str) -> List[int]:
         def compute(left, op, right):
             results = []
             for l in left:
                 for r in right:
-                    results.append(eval(str(l) + op + str(r)))
+                    expression = str(l) + op + str(r)
+                    if expression not in self.dp:
+                        self.dp[expression] = eval(expression)
+                    results.append(self.dp[expression])
             
             return results
         
