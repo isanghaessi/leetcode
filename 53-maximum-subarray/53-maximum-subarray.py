@@ -5,6 +5,4 @@ class Solution:
             nums[i] += nums[i - 1] if nums[i - 1] > 0 else 0
             i += 1
             
-        print(nums)
-        
         return max(nums)
