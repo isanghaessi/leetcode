@@ -1,16 +1,10 @@
 class Solution:
     def maxSubArray(self, nums: List[int]) -> int:
-        prefixSum = []
-        currentSum = 0
-        for num in nums:
-            currentSum += num
-            prefixSum.append(currentSum)
-        answer = float('-inf')
-        currentMin = float('inf')
-        i = 0
-        while i < len(prefixSum):
-            answer = max(answer, prefixSum[i], prefixSum[i] - currentMin)
-            currentMin = min(currentMin, prefixSum[i])
+        i = 1
+        while i < len(nums):
+            nums[i] += nums[i - 1] if nums[i - 1] > 0 else 0
             i += 1
             
-        return answer
+        print(nums)
+        
+        return max(nums)
