@@ -14,9 +14,9 @@ class Solution:
                 else:
                     answer.append([nums[i], nums[l], nums[r]])
                     left, right = nums[l], nums[r]
-                    while l < len(nums) and nums[l] == left:
+                    while l < r and nums[l] == left:
                         l += 1
-                    while r >= 0 and nums[r] == right:
+                    while l < r and nums[r] == right:
                         r -= 1
             num = nums[i]
             while i < len(nums) and nums[i] == num:
