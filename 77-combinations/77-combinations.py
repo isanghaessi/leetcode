@@ -1,15 +1,17 @@
 class Solution:
     def combine(self, n: int, k: int) -> List[List[int]]:
-        def dfs(nums, numsPath):
-            if len(numsPath) == k:
-                answer.append(numsPath)
+        def comb(left, current, result):
+            if len(current) >= k:
                 
-                return
-            for i, num in enumerate(nums):
-                dfs(nums[i + 1:], (*numsPath, num))
+                return [*result, current]
+            
+            if len(left) < 1:
+                
+                return result
+            
+            for i, l in enumerate(left):
+                result = comb(left[i + 1:], [*current, left[i]], result)
+            
+            return result
         
-        
-        answer = []
-        dfs([i for i in range(1, n + 1)], ())
-        
-        return answer
+        return comb([i for i in range(1, n + 1)], [], [])
