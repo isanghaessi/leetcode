@@ -6,9 +6,9 @@ class Solution:
                 
                 return
             if pathSum == target:
-                path.sort()
-                if tuple(path) not in answer:
-                    answer.append(tuple(path))
+                # path.sort()
+                # if tuple(path) not in answer:
+                answer.append(tuple(path))
                 
                 return
             
