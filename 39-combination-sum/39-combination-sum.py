@@ -6,14 +6,12 @@ class Solution:
                 
                 return
             if pathSum == target:
-                answer.append(path[:])
+                answer.append(path)
                 
                 return
             
             for i, candidate in enumerate(candidates):
-                path.append(candidate)
-                find(candidates[i:], path)
-                path.remove(candidate)
+                find(candidates[i:], [*path, candidate])
         
         answer = []
         find(candidates, [])
