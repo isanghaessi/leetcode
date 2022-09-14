@@ -1,19 +1,23 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        def dfs(candidates, path):   
-            if sum(path) > target:
+        def find(path):
+            pathSum = sum(path)
+            if pathSum > target:
                 
                 return
-            if sum(path) == target:
-                answer.append(path)
+            if pathSum == target:
+                path.sort()
+                if tuple(path) not in answer:
+                    answer.append(tuple(path))
                 
                 return
             
-            for i, candidate in enumerate(candidates):
-                dfs(candidates[i:], (*path, candidate))
-        
+            for candidate in candidates:
+                path.append(candidate)
+                find(path)
+                path.remove(candidate)
         
         answer = []
-        dfs(candidates, ())
+        find([])
         
         return answer
