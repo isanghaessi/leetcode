@@ -1,6 +1,6 @@
 class Solution:
     def combinationSum(self, candidates: List[int], target: int) -> List[List[int]]:
-        def find(path):
+        def find(candidates, path):
             pathSum = sum(path)
             if pathSum > target:
                 
@@ -12,12 +12,12 @@ class Solution:
                 
                 return
             
-            for candidate in candidates:
+            for i, candidate in enumerate(candidates):
                 path.append(candidate)
-                find(path)
+                find(candidates[i:], path)
                 path.remove(candidate)
         
         answer = []
-        find([])
+        find(candidates, [])
         
         return answer
