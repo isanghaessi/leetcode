@@ -30,10 +30,10 @@ class Solution:
         
         answer = ListNode()
         answer.next = head
-        prev =  answer
+        prev = None
         slow = fast = head
         while fast and fast.next:
-            prev = prev.next
+            prev = slow
             slow = slow.next
             fast = fast.next.next
         prev.next = None
