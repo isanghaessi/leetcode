@@ -6,29 +6,18 @@
 class Solution:
     def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
         def merge(l1, l2):
-            result = node =  ListNode()
-            while l1 and l2:
-                if l1.val < l2.val:
-                    val, l1 = l1.val, l1.next
-                else:
-                    val, l2 = l2.val, l2.next
-                node.next = ListNode(val)
-                node = node.next
-            while l1:
-                node.next, l1 = ListNode(l1.val), l1.next
-                node = node.next
-            while l2:
-                node.next, l2 = ListNode(l2.val), l2.next
-                node = node.next
+            if l1 and l2:
+                if l1.val > l2.val:
+                    l1, l2 = l2, l1
+                l1.next = merge(l1.next, l2)
             
-            return result.next
+            return l1 or l2
         
         
         if not head or not head.next:
             
             return head
 
-        
         prev = None
         slow = fast = head
         while fast and fast.next:
