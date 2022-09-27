@@ -5,43 +5,39 @@
 #         self.next = next
 class Solution:
     def sortList(self, head: Optional[ListNode]) -> Optional[ListNode]:
-        def _merge(node1, node2):
+        def merge(l1, l2):
             result = node =  ListNode()
-            while node1 and node2:
-                if node1.val < node2.val:
-                    node.next = ListNode(node1.val)
-                    node1 = node1.next
+            while l1 and l2:
+                if l1.val < l2.val:
+                    val, l1 = l1.val, l1.next
                 else:
-                    node.next = ListNode(node2.val)
-                    node2 = node2.next
+                    val, l2 = l2.val, l2.next
+                node.next = ListNode(val)
                 node = node.next
-            while node1:
-                node.next = ListNode(node1.val)
-                node1 = node1.next
+            while l1:
+                node.next, l1 = ListNode(l1.val), l1.next
                 node = node.next
-            while node2:
-                node.next = ListNode(node2.val)
-                node2 = node2.next
+            while l2:
+                node.next, l2 = ListNode(l2.val), l2.next
                 node = node.next
             
             return result.next
         
         
-        count = 0
-        slow = fast = head
-        previousSlow = None
-        while fast:
-            if fast.next:
-                previousSlow = slow
-                slow = slow.next
-                fast = fast.next.next
-                count += 2
-            else:
-                break
-        if count == 0:
-
+        if not head or not head.next:
+            
             return head
-        else:
-            previousSlow.next = None
-
-            return _merge(self.sortList(head), self.sortList(slow))
+        
+        answer = ListNode()
+        answer.next = head
+        prev =  answer
+        slow = fast = head
+        while fast and fast.next:
+            prev = prev.next
+            slow = slow.next
+            fast = fast.next.next
+        prev.next = None
+        
+        return merge(self.sortList(head), self.sortList(slow))
+        
+        
