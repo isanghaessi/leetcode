@@ -1,24 +1,30 @@
 class Solution:
     def search(self, nums: List[int], target: int) -> int:
-        def binSearch(left, right):
-            if left > right:
+        def binSearch(l, r):
+            if l > r:
                 
                 return -1
             
-            index = (left + right) // 2
-            answer = -1
-            if nums[index] == target:
-                answer = index
-            elif nums[index] < target:
-                answer = binSearch(index + 1, right)
-                if answer < 0:
-                    answer = binSearch(left, index - 1)
+            m = (l + r) // 2
+            if nums[m][1] == target:
+                
+                return nums[m][0]
+            elif nums[m][1] > target:
+                
+                return binSearch(l, m - 1)
             else:
-                answer = binSearch(left, index - 1)
-                if answer < 0:
-                    answer = binSearch(index + 1, right)
+                
+                return binSearch(m + 1, r)
             
-            return answer
-        
+            
+        l, r = 0, len(nums) - 1
+        while l < r:
+            m = (l + r) // 2
+            if nums[m] > nums[r]:
+                l = m + 1
+            else:
+                r = m
+        nums = list(enumerate(nums))
+        nums = nums[l:] + nums[:l]
         
         return binSearch(0, len(nums) - 1)
