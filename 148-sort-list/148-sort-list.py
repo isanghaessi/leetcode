@@ -27,9 +27,8 @@ class Solution:
         if not head or not head.next:
             
             return head
+
         
-        answer = ListNode()
-        answer.next = head
         prev = None
         slow = fast = head
         while fast and fast.next:
