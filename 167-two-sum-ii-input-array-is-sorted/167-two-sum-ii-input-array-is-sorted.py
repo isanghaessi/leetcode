@@ -1,12 +1,12 @@
-from bisect import *
-
 class Solution:
     def twoSum(self, numbers: List[int], target: int) -> List[int]:        
-        i = 0
-        while i < len(numbers):
-            iTarget = target - numbers[i]
-            j = bisect_left(numbers, iTarget, lo = i + 1)
-            if j < len(numbers) and numbers[j] == iTarget :
+        l, r = 0, len(numbers) - 1
+        while l < r:
+            current = numbers[l] + numbers[r]
+            if current == target:
                 
-                return (i + 1, j + 1)
-            i += 1
+                return (l + 1, r + 1)
+            elif current < target:
+                l += 1
+            else:
+                r -= 1
