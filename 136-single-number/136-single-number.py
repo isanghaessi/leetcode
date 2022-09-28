@@ -1,7 +1,11 @@
+from collections import *
+
 class Solution:
     def singleNumber(self, nums: List[int]) -> int:
-        answer = 0
+        dp = defaultdict(int)
         for num in nums:
-            answer ^= num
-            
-        return answer
+            dp[num] += 1
+        for dpKey in dp:
+            if dp[dpKey] == 1:
+                
+                return dpKey
