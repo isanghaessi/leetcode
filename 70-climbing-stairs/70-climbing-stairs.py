@@ -9,7 +9,6 @@ class Solution:
         if n in self.dp:
             
             return self.dp[n]
-        
         self.dp[n] = self.climbStairs(n - 1) + self.climbStairs(n - 2)
         
         return self.dp[n]
