@@ -11,4 +11,4 @@ class Solution:
         l = self.majorityElement(nums[:halfLen])
         r = self.majorityElement(nums[halfLen:])
         
-        return [r, l][nums.count(l) > halfLen]
+        return [l, r][nums.count(r) > halfLen]
