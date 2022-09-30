@@ -5,8 +5,9 @@ class Solution:
         g.sort()
         s.sort()
         answer = 0
-        while len(g) > 0 and len(s) > 0:
-            if g.pop() <= s[-1]:
+        while len(g) > 0:
+            currentG = g.pop()
+            if len(s) > 0 and currentG <= s[-1]:
                 s.pop()
                 answer += 1
         
