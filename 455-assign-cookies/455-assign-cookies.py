@@ -5,11 +5,9 @@ class Solution:
         g.sort()
         s.sort()
         answer = 0
-        i = len(g) - 1
-        while i >= 0 and len(s) > 0:
-            if g[i] <= s[-1]:
+        while len(g) > 0 and len(s) > 0:
+            if g.pop() <= s[-1]:
                 s.pop()
                 answer += 1
-            i -= 1
         
         return answer
