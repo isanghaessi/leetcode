@@ -2,10 +2,7 @@ from heapq import *
 
 class Solution:
     def canCompleteCircuit(self, gas: List[int], cost: List[int]) -> int:
-        current = 0
-        for i in range(len(gas)):
-            current += gas[i] - cost[i]
-        if current < 0:
+        if sum(gas) < sum(cost):
             
             return -1
         
