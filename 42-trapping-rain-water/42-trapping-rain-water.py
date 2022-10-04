@@ -4,14 +4,13 @@ class Solution:
         stack = []
         for i in range(len(height)):
             while len(stack) > 0 and height[stack[-1]] < height[i]:
-                left = stack.pop()
+                bottom = height[stack.pop()]
+                
                 if len(stack) < 1:
                     
                     break
                 
-                distance = i - stack[-1] - 1
-                water = min(height[i], height[stack[-1]]) - height[left]
-                answer += distance * water
+                answer += (min(height[stack[-1]], height[i]) - bottom) * (i - stack[-1] - 1)
             stack.append(i)
         
         return answer
