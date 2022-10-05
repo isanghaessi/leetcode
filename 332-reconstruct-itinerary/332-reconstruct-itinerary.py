@@ -1,35 +1,16 @@
 from collections import *
 
 class Solution:
-    answer = []
-    
     def findItinerary(self, tickets: List[List[str]]) -> List[str]:
-        def fly(current, count, path):
-            if len(self.answer) > 0:
-                
-                return
-            
-            if count == flyCount:
-                self.answer = path
-                
-                return
-            
-            for i in range(len(ticketDict[current])):
-                rest = []
-                for _ in range(i):
-                    rest.append(heappop(ticketDict[current]))
-                currentNext = heappop(ticketDict[current])
-                for r in rest:
-                    heappush(ticketDict[current], r)
-                fly(currentNext, count + 1, [*path, currentNext])
-                heappush(ticketDict[current], currentNext)
+        def dfs(a):
+            while graph[a]:
+                dfs(graph[a].pop(0))
+            route.append(a)
         
+        graph = defaultdict(list)
+        for a, b in sorted(tickets):
+            graph[a].append(b)
+        route = []
+        dfs('JFK')
         
-        ticketDict = defaultdict(list)
-        flyCount = 0
-        for fr, to in tickets:
-            heappush(ticketDict[fr], to)
-            flyCount += 1
-        fly('JFK', 0, [])
-        
-        return ['JFK'] + self.answer
+        return route[::-1]
