@@ -2,17 +2,16 @@ from collections import *
 
 class Solution:
     def removeDuplicateLetters(self, s: str) -> str:
-        counter, seen, stack = Counter(s), set(), []
-        for char in s:
-            counter[char] -= 1
+        counter, stack = Counter(s), []
+        for _s in s:
+            counter[_s] -= 1
             
-            if char in seen:
+            if _s in stack:
                 
                 continue
-                
-            while len(stack) > 0 and char < stack[-1] and counter[stack[-1]] > 0:
-                seen.remove(stack.pop())
-            stack.append(char)
-            seen.add(char)
+            
+            while len(stack) > 0 and _s < stack[-1] and counter[stack[-1]] > 0:
+                stack.pop()
+            stack.append(_s)
         
         return ''.join(stack)
