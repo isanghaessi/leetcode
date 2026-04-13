@@ -24,7 +24,7 @@ class Solution {
     
         int reverseIndex = remove(current, current.next, n) + 1;
 
-        if (reverseIndex == n && previous != null) {
+        if (reverseIndex == n) {
             previous.next = current.next;
         }
 
