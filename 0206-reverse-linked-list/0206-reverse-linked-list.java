@@ -10,32 +10,17 @@
  */
 class Solution {
     public ListNode reverseList(ListNode head) {
-        List<Integer> list = toList(head);
-        Collections.reverse(list);
-        
-        return toNode(list);
-    }
+        ListNode p = null;
+        ListNode q = head;
+        ListNode r = head;
 
-    List<Integer> toList(ListNode head) {
-        List<Integer> list = new ArrayList<>();
-
-        while (head != null) {
-            list.add(head.val);
-            head = head.next;
+        while (q != null) {
+            r = q.next;
+            q.next = p;
+            p = q;
+            q = r;
         }
 
-        return list;
-    }
-
-    ListNode toNode(List<Integer> list) {
-        ListNode head = new ListNode();
-
-        ListNode current = head;
-        for (Integer value: list) {
-            current.next = new ListNode(value);
-            current = current.next;
-        }
-
-        return head.next;
+        return p;
     }
 }
