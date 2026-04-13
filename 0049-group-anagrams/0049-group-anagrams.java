@@ -4,15 +4,15 @@ class Solution {
 
         for (String s: strs) {
             String anagramAlpha = getAnagramAlpha(s);
-            anagrams.putIfAbsent(anagramAlpha, new ArrayList());
-            anagrams.get(anagramAlpha).add(s);
+            anagrams.computeIfAbsent(anagramAlpha, (key) -> new ArrayList<>())
+            .add(s);
         }
 
-        return anagrams.values().stream().toList();
+        return new ArrayList<>(anagrams.values());
     }
 
     String getAnagramAlpha(String str) {
-        char[] alphas = str.replaceAll("[^a-z0-9]", "").toLowerCase().toCharArray();
+        char[] alphas = str.toCharArray();
         Arrays.sort(alphas);
 
         return new String(alphas);
