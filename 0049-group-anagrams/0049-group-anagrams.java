@@ -6,8 +6,7 @@ class Solution {
             char[] chars = str.toCharArray();
             Arrays.sort(chars);
             String sortedStr = new String(chars);
-            anagrams.putIfAbsent(sortedStr, new ArrayList<>());
-            anagrams.get(sortedStr).add(str);
+            anagrams.computeIfAbsent(sortedStr, k -> new ArrayList<>()).add(str);
         }
 
         return new ArrayList<>(anagrams.values());
