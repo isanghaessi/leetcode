@@ -15,30 +15,25 @@ class Solution {
                 result++;
 
                 stack.push(new int[] {i, j});
-                while (true) {
+                while (!stack.isEmpty()) {
                     int[] current = stack.pop();
-
-                    if (current == null) {
-                        break;
-                    }
 
                     int _i = current[0];
                     int _j = current[1];
-
                     if (_i < 0 || _i >= grid.length || _j < 0 || _j >= grid[0].length) {
-                        break;
+                        continue;
                     }
 
                     if (grid[_i][_j] == '0') {
-                        break;
+                        continue;
                     }
 
                     grid[_i][_j] = '0';
 
-                    stack.push(new int[] {_i - 1, _j});
-                    stack.push(new int[] {_i, _j - 1});
-                    stack.push(new int[] {_i + 1, _j});
-                    stack.push(new int[] {_i, _j + 1});
+                    stack.push(new int[] {_i - 1, _j    });
+                    stack.push(new int[] {_i    , _j - 1});
+                    stack.push(new int[] {_i + 1, _j    });
+                    stack.push(new int[] {_i    , _j + 1});
                 }
             }
         }
