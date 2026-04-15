@@ -18,19 +18,16 @@ class Solution {
         int result = 0;
         int i = 0;
         while (i < s.length()) {
-            if (i + 1 < s.length()) {
-                String doubleNumber = s.substring(i, i + 2);
-                if (symbols.containsKey(doubleNumber)) {
-                    result += symbols.get(doubleNumber);
-                    i += 2;
-                } else {
-                    result += symbols.get(s.substring(i, i + 1));
-                    i++;    
-                }
+            int current = symbols.get(s.substring(i, i + 1));
+
+            if (i + 1 < s.length() && symbols.containsKey(s.substring(i, i + 2))) {
+                current = symbols.get(s.substring(i, i + 2));
+                i += 2;
             } else {
-                result += symbols.get(s.substring(i, i + 1));
                 i++;
             }
+
+            result += current;
         }
 
         return result;
