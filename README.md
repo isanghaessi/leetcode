@@ -19,6 +19,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0048-rotate-image](https://github.com/isanghaessi/leetcode/tree/main/0048-rotate-image/) | Medium |
 | [0049-group-anagrams](https://github.com/isanghaessi/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0200-number-of-islands](https://github.com/isanghaessi/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0322-coin-change](https://github.com/isanghaessi/leetcode/tree/main/0322-coin-change/) | Medium |
@@ -61,9 +62,11 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Matrix
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0048-rotate-image](https://github.com/isanghaessi/leetcode/tree/main/0048-rotate-image/) | Medium |
 | [0200-number-of-islands](https://github.com/isanghaessi/leetcode/tree/main/0200-number-of-islands/) | Medium |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0013-roman-to-integer](https://github.com/isanghaessi/leetcode/tree/main/0013-roman-to-integer/) | Easy |
+| [0048-rotate-image](https://github.com/isanghaessi/leetcode/tree/main/0048-rotate-image/) | Medium |
 <!---LeetCode Topics End-->
