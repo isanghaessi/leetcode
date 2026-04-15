@@ -6,10 +6,6 @@ class Solution {
 
         for (int i = 1; i <= amount; i++) {
             for (int j = 0; j < coins.length; j++) {
-                if (i - coins[j] < 0) {
-                    continue;
-                }
-
                 int previousIndex = i - coins[j];
                 if (previousIndex < 0 || dp[previousIndex] < 0) {
                     continue;
