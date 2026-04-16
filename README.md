@@ -29,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0013-roman-to-integer](https://github.com/isanghaessi/leetcode/tree/main/0013-roman-to-integer/) | Easy |
 | [0049-group-anagrams](https://github.com/isanghaessi/leetcode/tree/main/0049-group-anagrams/) | Medium |
+| [0133-clone-graph](https://github.com/isanghaessi/leetcode/tree/main/0133-clone-graph/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -50,10 +51,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Depth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0133-clone-graph](https://github.com/isanghaessi/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0200-number-of-islands](https://github.com/isanghaessi/leetcode/tree/main/0200-number-of-islands/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0133-clone-graph](https://github.com/isanghaessi/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0200-number-of-islands](https://github.com/isanghaessi/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0322-coin-change](https://github.com/isanghaessi/leetcode/tree/main/0322-coin-change/) | Medium |
 ## Union-Find
@@ -75,4 +78,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0054-spiral-matrix](https://github.com/isanghaessi/leetcode/tree/main/0054-spiral-matrix/) | Medium |
+## Graph Theory
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0133-clone-graph](https://github.com/isanghaessi/leetcode/tree/main/0133-clone-graph/) | Medium |
 <!---LeetCode Topics End-->
