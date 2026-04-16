@@ -40,7 +40,6 @@ class Solution {
     }
 
     void addAndMark(int[][] matrix, int i, int j, List<Integer> result) {
-        System.out.println("" + i+ j+ matrix[i][j]+ result);
         if (matrix[i][j] > 100) {
             return;
         }
