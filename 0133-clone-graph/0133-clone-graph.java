@@ -30,8 +30,7 @@ class Solution {
             return seen.get(node.val);
         }
 
-        Node newNode = new Node();
-        newNode.val = node.val;
+        Node newNode = new Node(node.val);
 
         seen.put(node.val, newNode);
 
