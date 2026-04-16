@@ -18,14 +18,14 @@ class Solution {
             }
             jMax--;
 
-            if (iMin < iMax) {
+            if (iMin <= iMax) {
                 for (int j = jMax; j >= jMin; j--) {
                     result.add(matrix[iMax][j]);
                 }
             }
             iMax--;
 
-            if (jMin < jMax) {
+            if (jMin <= jMax) {
                 for (int i = iMax; i >= iMin; i--) {
                     result.add(matrix[i][jMin]);
                 }
