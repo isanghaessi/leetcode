@@ -1,9 +1,5 @@
 class Solution {
     public int[][] floodFill(int[][] image, int sr, int sc, int color) {
-        if (image[sr][sc] == color) {
-            return image;
-        }
-
         fill(image, sr, sc, color, image[sr][sc]);
 
         return image;
@@ -14,7 +10,8 @@ class Solution {
             return;
         }
 
-        if (image[i][j] != originColor) {
+        int currentColor = image[i][j];
+        if (currentColor == color || currentColor != originColor) {
             return;
         }
 
