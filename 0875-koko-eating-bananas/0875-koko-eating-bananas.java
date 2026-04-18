@@ -1,9 +1,7 @@
 class Solution {
     public int minEatingSpeed(int[] piles, int h) {
-        Arrays.sort(piles);
-
         int min = 1;
-        int max = piles[piles.length - 1];
+        int max = Arrays.stream(piles).max().getAsInt();
 
         int result = max;
 
@@ -22,7 +20,7 @@ class Solution {
     }
 
     boolean eat(int[] piles, int h, int k) {
-        long spent = 0;
+        int spent = 0;
         int i = 0;
         while (i < piles.length) {
             long current = piles[i];
