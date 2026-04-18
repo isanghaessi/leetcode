@@ -32,6 +32,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0435-non-overlapping-intervals](https://github.com/isanghaessi/leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0704-binary-search](https://github.com/isanghaessi/leetcode/tree/main/0704-binary-search/) | Easy |
 | [0733-flood-fill](https://github.com/isanghaessi/leetcode/tree/main/0733-flood-fill/) | Easy |
+| [0875-koko-eating-bananas](https://github.com/isanghaessi/leetcode/tree/main/0875-koko-eating-bananas/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -113,4 +114,5 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0033-search-in-rotated-sorted-array](https://github.com/isanghaessi/leetcode/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0704-binary-search](https://github.com/isanghaessi/leetcode/tree/main/0704-binary-search/) | Easy |
+| [0875-koko-eating-bananas](https://github.com/isanghaessi/leetcode/tree/main/0875-koko-eating-bananas/) | Medium |
 <!---LeetCode Topics End-->
