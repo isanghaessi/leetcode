@@ -19,6 +19,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0001-two-sum](https://github.com/isanghaessi/leetcode/tree/main/0001-two-sum/) | Easy |
 | [0048-rotate-image](https://github.com/isanghaessi/leetcode/tree/main/0048-rotate-image/) | Medium |
 | [0049-group-anagrams](https://github.com/isanghaessi/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0054-spiral-matrix](https://github.com/isanghaessi/leetcode/tree/main/0054-spiral-matrix/) | Medium |
@@ -28,6 +29,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
+| [0001-two-sum](https://github.com/isanghaessi/leetcode/tree/main/0001-two-sum/) | Easy |
 | [0013-roman-to-integer](https://github.com/isanghaessi/leetcode/tree/main/0013-roman-to-integer/) | Easy |
 | [0049-group-anagrams](https://github.com/isanghaessi/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0133-clone-graph](https://github.com/isanghaessi/leetcode/tree/main/0133-clone-graph/) | Medium |
