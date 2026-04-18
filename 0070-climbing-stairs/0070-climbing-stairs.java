@@ -12,7 +12,9 @@ class Solution {
             return 2;
         }
 
-        ways.putIfAbsent(n, climbStairs(n -1) + climbStairs(n - 2));
+        if (!ways.containsKey(n)) {
+            ways.put(n, climbStairs(n -1) + climbStairs(n - 2));
+        }
 
         return ways.get(n);
     }
