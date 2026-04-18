@@ -24,6 +24,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0048-rotate-image](https://github.com/isanghaessi/leetcode/tree/main/0048-rotate-image/) | Medium |
 | [0049-group-anagrams](https://github.com/isanghaessi/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0054-spiral-matrix](https://github.com/isanghaessi/leetcode/tree/main/0054-spiral-matrix/) | Medium |
+| [0055-jump-game](https://github.com/isanghaessi/leetcode/tree/main/0055-jump-game/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/isanghaessi/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0200-number-of-islands](https://github.com/isanghaessi/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0322-coin-change](https://github.com/isanghaessi/leetcode/tree/main/0322-coin-change/) | Medium |
@@ -44,6 +45,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/isanghaessi/leetcode/tree/main/0005-longest-palindromic-substring/) | Medium |
+| [0055-jump-game](https://github.com/isanghaessi/leetcode/tree/main/0055-jump-game/) | Medium |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/isanghaessi/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0322-coin-change](https://github.com/isanghaessi/leetcode/tree/main/0322-coin-change/) | Medium |
 ## Linked List
@@ -96,4 +98,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0003-longest-substring-without-repeating-characters](https://github.com/isanghaessi/leetcode/tree/main/0003-longest-substring-without-repeating-characters/) | Medium |
+## Greedy
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0055-jump-game](https://github.com/isanghaessi/leetcode/tree/main/0055-jump-game/) | Medium |
 <!---LeetCode Topics End-->
