@@ -12,13 +12,10 @@ class Solution {
             return 2;
         }
 
-        if (ways.containsKey(n)) {
-            return ways.get(n);
+        if (!ways.containsKey(n)) {
+            ways.put(n, climbStairs(n -1) + climbStairs(n - 2));
         }
 
-        int result = climbStairs(n -1) + climbStairs(n - 2);
-        ways.put(n, result);
-
-        return result;
+        return ways.get(n);
     }
 }
