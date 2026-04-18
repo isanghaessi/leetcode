@@ -51,6 +51,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0005-longest-palindromic-substring](https://github.com/isanghaessi/leetcode/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0055-jump-game](https://github.com/isanghaessi/leetcode/tree/main/0055-jump-game/) | Medium |
+| [0070-climbing-stairs](https://github.com/isanghaessi/leetcode/tree/main/0070-climbing-stairs/) | Easy |
 | [0121-best-time-to-buy-and-sell-stock](https://github.com/isanghaessi/leetcode/tree/main/0121-best-time-to-buy-and-sell-stock/) | Easy |
 | [0322-coin-change](https://github.com/isanghaessi/leetcode/tree/main/0322-coin-change/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/isanghaessi/leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
@@ -92,6 +93,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0013-roman-to-integer](https://github.com/isanghaessi/leetcode/tree/main/0013-roman-to-integer/) | Easy |
 | [0048-rotate-image](https://github.com/isanghaessi/leetcode/tree/main/0048-rotate-image/) | Medium |
+| [0070-climbing-stairs](https://github.com/isanghaessi/leetcode/tree/main/0070-climbing-stairs/) | Easy |
 ## Simulation
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -115,4 +117,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0033-search-in-rotated-sorted-array](https://github.com/isanghaessi/leetcode/tree/main/0033-search-in-rotated-sorted-array/) | Medium |
 | [0704-binary-search](https://github.com/isanghaessi/leetcode/tree/main/0704-binary-search/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/isanghaessi/leetcode/tree/main/0875-koko-eating-bananas/) | Medium |
+## Memoization
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0070-climbing-stairs](https://github.com/isanghaessi/leetcode/tree/main/0070-climbing-stairs/) | Easy |
 <!---LeetCode Topics End-->
