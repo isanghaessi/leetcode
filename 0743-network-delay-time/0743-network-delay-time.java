@@ -22,9 +22,9 @@ class Solution {
             }
         }
 
-        int answer = result[0];
+        int answer = 0;
         for (int res: result) {
-            if (answer == Integer.MAX_VALUE) {
+            if (res == Integer.MAX_VALUE) {
                 return - 1;
             }
 
