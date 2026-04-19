@@ -18,21 +18,19 @@ class Solution {
             int node = current[0];
             int time = current[1];
 
-            if (result[node] < 0) {
-                result[node] = time;
-            } else {
-                result[node] = Math.min(result[node], time);
-            }
-
-            List<int[]> toGos = timeMap.get(node);
-            if (toGos == null) {
+            if (result[node] > 0) {
                 continue;
             }
 
-            for (int[] toGo: toGos) {
+            result[node] = time;
+
+            if (!timeMap.containsKey(node)) {
+                continue;
+            }
+
+            for (int[] toGo: timeMap.get(node)) {
                 pq.offer(new int[] {toGo[0], time + toGo[1]});
             }
-            timeMap.remove(node);
         }
 
         int answer = result[0];
