@@ -9,7 +9,6 @@ class Solution {
         int[] result = new int[n + 1];
         Arrays.fill(result, -1);
         result[0] = 0;
-        result[k] = 0;
 
         PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[1] - b[1]);
         pq.offer(new int[] {k, 0});
@@ -18,7 +17,7 @@ class Solution {
             int node = current[0];
             int time = current[1];
 
-            if (result[node] > 0) {
+            if (result[node] >= 0) {
                 continue;
             }
 
