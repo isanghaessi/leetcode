@@ -72,6 +72,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0133-clone-graph](https://github.com/isanghaessi/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0200-number-of-islands](https://github.com/isanghaessi/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0733-flood-fill](https://github.com/isanghaessi/leetcode/tree/main/0733-flood-fill/) | Easy |
+| [0743-network-delay-time](https://github.com/isanghaessi/leetcode/tree/main/0743-network-delay-time/) | Medium |
 ## Breadth-First Search
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -79,6 +80,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0200-number-of-islands](https://github.com/isanghaessi/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0322-coin-change](https://github.com/isanghaessi/leetcode/tree/main/0322-coin-change/) | Medium |
 | [0733-flood-fill](https://github.com/isanghaessi/leetcode/tree/main/0733-flood-fill/) | Easy |
+| [0743-network-delay-time](https://github.com/isanghaessi/leetcode/tree/main/0743-network-delay-time/) | Medium |
 ## Union-Find
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -104,6 +106,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0133-clone-graph](https://github.com/isanghaessi/leetcode/tree/main/0133-clone-graph/) | Medium |
+| [0743-network-delay-time](https://github.com/isanghaessi/leetcode/tree/main/0743-network-delay-time/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -124,4 +127,12 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0070-climbing-stairs](https://github.com/isanghaessi/leetcode/tree/main/0070-climbing-stairs/) | Easy |
+## Heap (Priority Queue)
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0743-network-delay-time](https://github.com/isanghaessi/leetcode/tree/main/0743-network-delay-time/) | Medium |
+## Shortest Path
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0743-network-delay-time](https://github.com/isanghaessi/leetcode/tree/main/0743-network-delay-time/) | Medium |
 <!---LeetCode Topics End-->
