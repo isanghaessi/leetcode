@@ -1,41 +1,31 @@
 class Solution {
     public int networkDelayTime(int[][] times, int n, int k) {
-        Map<Integer, List<int[]>> timeMap = new HashMap<>();
-        for (int[] time: times) {
-            timeMap.putIfAbsent(time[0], new ArrayList<>());
-            timeMap.get(time[0]).add(new int[] {time[1], time[2]});
-        }
-
         int[] result = new int[n + 1];
-        Arrays.fill(result, -1);
+        Arrays.fill(result, Integer.MAX_VALUE);
         result[0] = 0;
+        result[k] = 0;
 
-        PriorityQueue<int[]> pq = new PriorityQueue<>((a, b) -> a[1] - b[1]);
-        pq.offer(new int[] {k, 0});
-        while (pq.size() > 0) {
-            int[] current = pq.poll();
-            int node = current[0];
-            int time = current[1];
+        for (int i = 0; i < n - 1; i++) {
+            for (int[] time: times) {
+                int from = time[0];
+                int to = time[1];
+                int spent = time[2];
 
-            if (result[node] >= 0) {
-                continue;
-            }
+                if (result[from] == Integer.MAX_VALUE) {
+                    continue;
+                }
 
-            result[node] = time;
-
-            if (!timeMap.containsKey(node)) {
-                continue;
-            }
-
-            for (int[] toGo: timeMap.get(node)) {
-                pq.offer(new int[] {toGo[0], time + toGo[1]});
+                int newTime = result[from] + spent;
+                if (result[to] > newTime) {
+                    result[to] = newTime;
+                }
             }
         }
 
         int answer = result[0];
-        for(int res: result) {
-            if (res < 0) {
-                return -1;
+        for (int res: result) {
+            if (answer == Integer.MAX_VALUE) {
+                return - 1;
             }
 
             answer = Math.max(answer, res);
