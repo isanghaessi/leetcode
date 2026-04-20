@@ -20,6 +20,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0125-valid-palindrome](https://github.com/isanghaessi/leetcode/tree/main/0125-valid-palindrome/) | Easy |
 | [1071-greatest-common-divisor-of-strings](https://github.com/isanghaessi/leetcode/tree/main/1071-greatest-common-divisor-of-strings/) | Easy |
 | [1768-merge-strings-alternately](https://github.com/isanghaessi/leetcode/tree/main/1768-merge-strings-alternately/) | Easy |
+| [2390-removing-stars-from-a-string](https://github.com/isanghaessi/leetcode/tree/main/2390-removing-stars-from-a-string/) | Medium |
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -110,6 +111,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0054-spiral-matrix](https://github.com/isanghaessi/leetcode/tree/main/0054-spiral-matrix/) | Medium |
+| [2390-removing-stars-from-a-string](https://github.com/isanghaessi/leetcode/tree/main/2390-removing-stars-from-a-string/) | Medium |
 ## Graph Theory
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -149,4 +151,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0743-network-delay-time](https://github.com/isanghaessi/leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/isanghaessi/leetcode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
 | [1514-path-with-maximum-probability](https://github.com/isanghaessi/leetcode/tree/main/1514-path-with-maximum-probability/) | Medium |
+## Stack
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [2390-removing-stars-from-a-string](https://github.com/isanghaessi/leetcode/tree/main/2390-removing-stars-from-a-string/) | Medium |
 <!---LeetCode Topics End-->
