@@ -19,7 +19,7 @@ class Solution {
                 newResult[to] = Arrays.stream(new int[] {result[to], newResult[to], result[from] + time})
                     .filter((a) -> a >= 0)
                     .min()
-                    .getAsInt();
+                    .orElse(-1);
             }
 
             result = newResult;
