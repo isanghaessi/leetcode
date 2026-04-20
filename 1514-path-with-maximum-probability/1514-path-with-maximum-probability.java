@@ -9,6 +9,9 @@ class Solution {
             edgeMap.get(edges[i][1]).add(new int[] {edges[i][0], i});
         }
 
+        double[] maxProbs = new double[n];
+        Arrays.fill(maxProbs, 0);
+
         PriorityQueue<List<Number>> pq = new PriorityQueue<>((a, b) -> Double.compare((double)b.get(1), (double)a.get(1)));
         List<Number> item = new ArrayList<>();
         item.add(start_node);
@@ -23,6 +26,12 @@ class Solution {
             if (node == end_node) {
                 return possibility;
             }
+
+            if (maxProbs[node] > possibility) {
+                continue;
+            }
+
+            maxProbs[node] = possibility;
 
             List<int[]> toGos = edgeMap.get(node);
             for (int[] toGo: toGos) {
