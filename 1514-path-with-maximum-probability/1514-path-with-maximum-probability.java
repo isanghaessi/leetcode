@@ -43,7 +43,7 @@ class Solution {
                 pq.offer(newItem);
             }
 
-            // toGos.clear();
+            toGos.clear();
         }
 
         return 0;
