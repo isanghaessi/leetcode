@@ -34,6 +34,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0704-binary-search](https://github.com/isanghaessi/leetcode/tree/main/0704-binary-search/) | Easy |
 | [0733-flood-fill](https://github.com/isanghaessi/leetcode/tree/main/0733-flood-fill/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/isanghaessi/leetcode/tree/main/0875-koko-eating-bananas/) | Medium |
+| [1514-path-with-maximum-probability](https://github.com/isanghaessi/leetcode/tree/main/1514-path-with-maximum-probability/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -111,6 +112,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0133-clone-graph](https://github.com/isanghaessi/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [0743-network-delay-time](https://github.com/isanghaessi/leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/isanghaessi/leetcode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
+| [1514-path-with-maximum-probability](https://github.com/isanghaessi/leetcode/tree/main/1514-path-with-maximum-probability/) | Medium |
 ## Sliding Window
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -136,9 +138,11 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | ------- | ------- |
 | [0743-network-delay-time](https://github.com/isanghaessi/leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/isanghaessi/leetcode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
+| [1514-path-with-maximum-probability](https://github.com/isanghaessi/leetcode/tree/main/1514-path-with-maximum-probability/) | Medium |
 ## Shortest Path
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0743-network-delay-time](https://github.com/isanghaessi/leetcode/tree/main/0743-network-delay-time/) | Medium |
 | [0787-cheapest-flights-within-k-stops](https://github.com/isanghaessi/leetcode/tree/main/0787-cheapest-flights-within-k-stops/) | Medium |
+| [1514-path-with-maximum-probability](https://github.com/isanghaessi/leetcode/tree/main/1514-path-with-maximum-probability/) | Medium |
 <!---LeetCode Topics End-->
