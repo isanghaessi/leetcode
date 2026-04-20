@@ -11,7 +11,7 @@ class Solution {
         for (int i = str2.length(); i >= 0; i--) {
             result = str2.substring(0, i);
 
-            if (check(result, str1) && check(result, str2)) {
+            if (check(result, str2) && check(result, str1)) {
                 return result;
             }
         }
