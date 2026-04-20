@@ -8,7 +8,7 @@ class Solution {
 
         String result = str2;
 
-        for (int i = str2.length(); i >= 0; i--) {
+        for (int i = str2.length(); i > 0; i--) {
             result = str2.substring(0, i);
 
             if (check(result, str1) && check(result, str2)) {
@@ -20,10 +20,6 @@ class Solution {
     }
 
     boolean check(String divide, String str) {
-        if (divide.length() < 1) {
-            return true;
-        }
-
         if (str.length() % divide.length() > 0) {
             return false;
         }
