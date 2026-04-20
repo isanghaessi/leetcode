@@ -9,6 +9,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0005-longest-palindromic-substring](https://github.com/isanghaessi/leetcode/tree/main/0005-longest-palindromic-substring/) | Medium |
 | [0019-remove-nth-node-from-end-of-list](https://github.com/isanghaessi/leetcode/tree/main/0019-remove-nth-node-from-end-of-list/) | Medium |
 | [0125-valid-palindrome](https://github.com/isanghaessi/leetcode/tree/main/0125-valid-palindrome/) | Easy |
+| [1768-merge-strings-alternately](https://github.com/isanghaessi/leetcode/tree/main/1768-merge-strings-alternately/) | Easy |
 ## String
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -17,6 +18,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0013-roman-to-integer](https://github.com/isanghaessi/leetcode/tree/main/0013-roman-to-integer/) | Easy |
 | [0049-group-anagrams](https://github.com/isanghaessi/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0125-valid-palindrome](https://github.com/isanghaessi/leetcode/tree/main/0125-valid-palindrome/) | Easy |
+| [1768-merge-strings-alternately](https://github.com/isanghaessi/leetcode/tree/main/1768-merge-strings-alternately/) | Easy |
 ## Array
 | Problem Name | Difficulty |
 | ------- | ------- |
