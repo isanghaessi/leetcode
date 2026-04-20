@@ -6,10 +6,15 @@ class Solution {
             str2 = temp;
         }
 
-        String result = str2;
+        int i = 0;
+        while (i < str2.length() && str1.charAt(i) == str2.charAt(i)) {
+            i++;
+        }
 
-        for (int i = str2.length(); i >= 0; i--) {
-            result = str2.substring(0, i);
+        String result = str2.substring(0, i);
+
+        for (int j = result.length(); j >= 0; j--) {
+            result = result.substring(0, j);
 
             if (check(result, str2) && check(result, str1)) {
                 return result;
