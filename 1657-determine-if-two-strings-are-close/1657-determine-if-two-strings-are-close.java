@@ -32,8 +32,8 @@ class Solution {
         List<Integer> values1 = counter1.values().stream().sorted().toList();
         List<Integer> values2 = counter2.values().stream().sorted().toList();
 
-        for (int i = 0; i < values1.size(); i++ ) {
-            if (values1.get(i) != values2.get(i)) {
+        for (int i = 0; i < values1.size(); i++) {
+            if (!values1.get(i).equals(values2.get(i))) {
                 return false;
             }
         }
