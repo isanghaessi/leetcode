@@ -22,10 +22,7 @@ class Solution {
     }
 
     boolean isPossible(Map<Character, Integer> counter1, Map<Character, Integer> counter2) {
-        String keyString1 = counter1.keySet().stream().sorted().map((v) -> String.valueOf(v)).collect(Collectors.joining(""));
-        String keyString2 = counter2.keySet().stream().sorted().map((v) -> String.valueOf(v)).collect(Collectors.joining(""));
-
-        if (!keyString1.equals(keyString2)) {
+        if (!counter1.keySet().equals(counter2.keySet())) {
             return false;
         }
 
