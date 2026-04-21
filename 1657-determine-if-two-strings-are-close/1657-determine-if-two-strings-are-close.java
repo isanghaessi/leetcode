@@ -14,8 +14,11 @@ class Solution {
         Map<Character, Integer> counter = new HashMap<>();
 
         for (char c: str.toCharArray()) {
-            counter.putIfAbsent(c, 0);
-            counter.put(c, counter.get(c) + 1);
+            if (counter.containsKey(c)) {
+                counter.put(c, counter.get(c) + 1);
+            } else {
+                counter.put(c, 1);
+            }
         }
 
         return counter;
