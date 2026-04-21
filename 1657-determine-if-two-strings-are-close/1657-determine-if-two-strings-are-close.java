@@ -22,13 +22,22 @@ class Solution {
     }
 
     boolean isPossible(Map<Character, Integer> counter1, Map<Character, Integer> counter2) {
-        if (!counter1.keySet().equals(counter2.keySet())) {
+        Set<Character> keys1 = counter1.keySet();
+        Set<Character> keys2 = counter2.keySet();
+
+        if (!keys1.equals(keys2)) {
             return false;
         }
 
-        String valueString1 = counter1.values().stream().map((v) -> String.valueOf(v)).sorted().collect(Collectors.joining(""));
-        String valueString2 = counter2.values().stream().map((v) -> String.valueOf(v)).sorted().collect(Collectors.joining(""));
+        List<Integer> values1 = counter1.values().stream().sorted().toList();
+        List<Integer> values2 = counter2.values().stream().sorted().toList();
 
-        return valueString1.equals(valueString2);
+        for (int i = 0; i < values1.size(); i++ ) {
+            if (values1.get(i) != values2.get(i)) {
+                return false;
+            }
+        }
+
+        return true;
     }
 }
