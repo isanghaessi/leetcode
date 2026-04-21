@@ -2,7 +2,7 @@ class Solution {
     public int[] countBits(int n) {
         int[] result = new int[n + 1];
 
-        List<Integer> bin = new ArrayList<>();
+        List<Integer> bin = new LinkedList<>();
         bin.add(0);
         
         for (int i = 1; i <= n; i++) {
