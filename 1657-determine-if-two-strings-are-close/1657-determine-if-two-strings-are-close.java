@@ -4,39 +4,37 @@ class Solution {
             return false;
         }
 
-        Map<Character, Integer> counter1 = getCounter(word1);    
-        Map<Character, Integer> counter2 = getCounter(word2);    
+        int alphaLength = 'z' - 'a' + 1;
 
-        return isPossible(counter1, counter2);
-    }
+        int[] counter1 = new int[alphaLength];
+        Arrays.fill(counter1, 0);
+        int[] counter2 = new int[alphaLength];
+        Arrays.fill(counter2, 0);
 
-    Map<Character, Integer> getCounter(String str) {
-        Map<Character, Integer> counter = new HashMap<>();
+        for (char c: word1.toCharArray()) {
+            counter1[c - 'a']++;
+        }
+        for (char c: word2.toCharArray()) {
+            counter2[c - 'a']++;
+        }
 
-        for (char c: str.toCharArray()) {
-            if (counter.containsKey(c)) {
-                counter.put(c, counter.get(c) + 1);
-            } else {
-                counter.put(c, 1);
+        for (int i = 0; i < alphaLength; i++) {
+            int current1 = counter1[i];
+            int current2 = counter2[i];
+
+            if ((current1 > 0 && current2 <= 0) || (current2 > 0 && current1 <= 0)) {
+                return false;
             }
         }
 
-        return counter;
-    }
+        Arrays.sort(counter1);
+        Arrays.sort(counter2);
 
-    boolean isPossible(Map<Character, Integer> counter1, Map<Character, Integer> counter2) {
-        Set<Character> keys1 = counter1.keySet();
-        Set<Character> keys2 = counter2.keySet();
+        for (int i = 0; i < alphaLength; i++) {
+            int current1 = counter1[i];
+            int current2 = counter2[i];
 
-        if (!keys1.equals(keys2)) {
-            return false;
-        }
-
-        List<Integer> values1 = counter1.values().stream().sorted().toList();
-        List<Integer> values2 = counter2.values().stream().sorted().toList();
-
-        for (int i = 0; i < values1.size(); i++) {
-            if (!values1.get(i).equals(values2.get(i))) {
+            if (current1 != current2) {
                 return false;
             }
         }
