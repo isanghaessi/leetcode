@@ -7,9 +7,7 @@ class Solution {
         int alphaLength = 'z' - 'a' + 1;
 
         int[] counter1 = new int[alphaLength];
-        Arrays.fill(counter1, 0);
         int[] counter2 = new int[alphaLength];
-        Arrays.fill(counter2, 0);
 
         for (char c: word1.toCharArray()) {
             counter1[c - 'a']++;
