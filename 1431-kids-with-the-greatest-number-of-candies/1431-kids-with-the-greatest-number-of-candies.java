@@ -1,9 +1,8 @@
 class Solution {
     public List<Boolean> kidsWithCandies(int[] candies, int extraCandies) {
-        int gc = candies[0];
-        for (int candy : candies) {
-            gc = Math.max(gc, candy);
-        }
+        int gc = Arrays.stream(candies)
+            .max()
+            .getAsInt();
 
         List<Boolean> result = new ArrayList<>();
         for (int candy : candies) {
