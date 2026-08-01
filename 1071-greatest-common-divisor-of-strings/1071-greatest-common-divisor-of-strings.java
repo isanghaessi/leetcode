@@ -23,7 +23,7 @@ class Solution {
     }
 
     private boolean doDivide(String s, String t) {
-        if (t == null || t.length() == 0) {
+        if (t.length() == 0) {
             return false;
         }
         if (s.length() % t.length() > 0) {
