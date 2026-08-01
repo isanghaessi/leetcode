@@ -1,19 +1,40 @@
 class Solution {
     public String gcdOfStrings(String str1, String str2) {
-        if (str1.length() < str2.length()) {
-            String temp = str1;
-            str1 = str2;
-            str2 = temp;
+        int len = Math.min(str1.length(), str2.length());
+
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < len; i++) {
+            if (str1.charAt(i) != str2.charAt(i)) {
+                break;
+            }
+
+            sb.append(str1.charAt(i));
+        }
+        String candidate = sb.toString();
+
+        for (int i = candidate.length(); i >= 0; i--) {
+            String current = candidate.substring(0, i);
+            if (doDivide(str1, current) && doDivide(str2, current)) {
+                return current;
+            }
         }
 
-        if (!(str1 + str2).equals(str2 + str1)) {
-            return "";
-        }
-
-        return str1.substring(0, greatCommonDivider(str1.length(), str2.length()));
+        return "";
     }
 
-    int greatCommonDivider(int a, int b) {
-        return b == 0 ? a : greatCommonDivider(b, a % b);
+    private boolean doDivide(String s, String t) {
+        if (t == null || t.length() == 0) {
+            return false;
+        }
+        if (s.length() % t.length() > 0) {
+            return false;
+        }
+
+        StringBuilder sb = new StringBuilder(t);
+        while (sb.length() < s.length()) {
+            sb.append(t);
+        }
+
+        return s.equals(sb.toString());
     }
 }
