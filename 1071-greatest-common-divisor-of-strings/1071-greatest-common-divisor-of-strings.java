@@ -14,7 +14,7 @@ class Solution {
 
         for (int i = candidate.length(); i >= 0; i--) {
             String current = candidate.substring(0, i);
-            if (doDivide(str1, current) && doDivide(str2, current)) {
+            if (doDivide(str2, current) && doDivide(str1, current)) {
                 return current;
             }
         }
