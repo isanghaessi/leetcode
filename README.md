@@ -41,6 +41,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0238-product-of-array-except-self](https://github.com/isanghaessi/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
 | [0300-longest-increasing-subsequence](https://github.com/isanghaessi/leetcode/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0322-coin-change](https://github.com/isanghaessi/leetcode/tree/main/0322-coin-change/) | Medium |
+| [0334-increasing-triplet-subsequence](https://github.com/isanghaessi/leetcode/tree/main/0334-increasing-triplet-subsequence/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/isanghaessi/leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0605-can-place-flowers](https://github.com/isanghaessi/leetcode/tree/main/0605-can-place-flowers/) | Easy |
 | [0704-binary-search](https://github.com/isanghaessi/leetcode/tree/main/0704-binary-search/) | Easy |
@@ -139,6 +140,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0055-jump-game](https://github.com/isanghaessi/leetcode/tree/main/0055-jump-game/) | Medium |
+| [0334-increasing-triplet-subsequence](https://github.com/isanghaessi/leetcode/tree/main/0334-increasing-triplet-subsequence/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/isanghaessi/leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [0605-can-place-flowers](https://github.com/isanghaessi/leetcode/tree/main/0605-can-place-flowers/) | Easy |
 ## Binary Search
@@ -186,4 +188,8 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0238-product-of-array-except-self](https://github.com/isanghaessi/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
+## Longest Increasing Subsequence
+| Problem Name | Difficulty |
+| ------- | ------- |
+| [0334-increasing-triplet-subsequence](https://github.com/isanghaessi/leetcode/tree/main/0334-increasing-triplet-subsequence/) | Medium |
 <!---LeetCode Topics End-->
