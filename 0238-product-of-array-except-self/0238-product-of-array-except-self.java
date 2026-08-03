@@ -15,9 +15,8 @@ class Solution {
         }
 
         int[] result = new int[nums.length];
-        Arrays.fill(result, 1);
         for (int i = 0; i < forward.length; i++) {
-            result[i] *= forward[i] * reverse[i];
+            result[i] = forward[i] * reverse[i];
         }
 
         return result;
