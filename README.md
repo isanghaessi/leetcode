@@ -10,6 +10,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0019-remove-nth-node-from-end-of-list](https://github.com/isanghaessi/leetcode/tree/main/0019-remove-nth-node-from-end-of-list/) | Medium |
 | [0125-valid-palindrome](https://github.com/isanghaessi/leetcode/tree/main/0125-valid-palindrome/) | Easy |
 | [0151-reverse-words-in-a-string](https://github.com/isanghaessi/leetcode/tree/main/0151-reverse-words-in-a-string/) | Medium |
+| [0283-move-zeroes](https://github.com/isanghaessi/leetcode/tree/main/0283-move-zeroes/) | Easy |
 | [0345-reverse-vowels-of-a-string](https://github.com/isanghaessi/leetcode/tree/main/0345-reverse-vowels-of-a-string/) | Easy |
 | [0443-string-compression](https://github.com/isanghaessi/leetcode/tree/main/0443-string-compression/) | Medium |
 | [1768-merge-strings-alternately](https://github.com/isanghaessi/leetcode/tree/main/1768-merge-strings-alternately/) | Easy |
@@ -41,6 +42,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0136-single-number](https://github.com/isanghaessi/leetcode/tree/main/0136-single-number/) | Easy |
 | [0200-number-of-islands](https://github.com/isanghaessi/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0238-product-of-array-except-self](https://github.com/isanghaessi/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
+| [0283-move-zeroes](https://github.com/isanghaessi/leetcode/tree/main/0283-move-zeroes/) | Easy |
 | [0300-longest-increasing-subsequence](https://github.com/isanghaessi/leetcode/tree/main/0300-longest-increasing-subsequence/) | Medium |
 | [0322-coin-change](https://github.com/isanghaessi/leetcode/tree/main/0322-coin-change/) | Medium |
 | [0334-increasing-triplet-subsequence](https://github.com/isanghaessi/leetcode/tree/main/0334-increasing-triplet-subsequence/) | Medium |
