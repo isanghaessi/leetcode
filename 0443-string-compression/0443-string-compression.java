@@ -4,7 +4,8 @@ class Solution {
             return 1;
         }
 
-        StringBuilder sb = new StringBuilder();
+        char[] result = new char[chars.length];
+        int ri = 0;
 
         char gc = chars[0];
         int count = 1;
@@ -14,9 +15,9 @@ class Solution {
             if (gc == cc) {
                 count++;
             } else {
-                sb.append(gc);
+                result[ri++] = gc;
                 if (count > 1) {
-                    sb.append(String.valueOf(count));
+                    ri = print(result, ri, String.valueOf(count));
                 }
 
                 gc = cc;
@@ -24,16 +25,24 @@ class Solution {
             }
         }
 
-        sb.append(gc);
+        result[ri++] = gc;
         if (count > 1) {
-            sb.append(String.valueOf(count));
+            ri = print(result, ri, String.valueOf(count));
         }
 
-        char[] result = sb.toString().toCharArray();
-        for (int i = 0; i < result.length; i++) {
+        for (int i = 0; i < ri; i++) {
             chars[i] = result[i];
         }
 
-        return result.length;
+        return ri;
+    }
+
+    private int print(char[] array, int index, String str) {
+        char[] strChars = str.toCharArray();
+        for(int i = 0; i < strChars.length; i++) {
+            array[index + i] = strChars[i];
+        }
+
+        return index + str.length();
     }
 }
