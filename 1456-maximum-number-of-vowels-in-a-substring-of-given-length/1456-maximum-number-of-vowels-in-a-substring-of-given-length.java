@@ -25,7 +25,9 @@ class Solution {
                 vc++;
             }
 
-            result = Math.max(result, vc);
+            if (result < vc) {
+                result = vc;
+            }
         }
 
         return result;
