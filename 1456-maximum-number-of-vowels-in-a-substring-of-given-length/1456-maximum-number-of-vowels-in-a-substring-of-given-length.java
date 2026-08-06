@@ -8,7 +8,6 @@ class Solution {
         vowels.add('u');
 
         int[] sa = new int[s.length()];
-        Arrays.fill(sa, 0);
 
         for (int i = 0; i < s.length(); i++) {
             if (vowels.contains(s.charAt(i))) {
