@@ -7,26 +7,28 @@ class Solution {
         vowels.add('o');
         vowels.add('u');
 
-        int result = 0;
-        int vc = 0;
-        for (int i = 0; i < k; i++) {
+        int[] sa = new int[s.length()];
+        Arrays.fill(sa, 0);
+
+        for (int i = 0; i < s.length(); i++) {
             if (vowels.contains(s.charAt(i))) {
-                vc++;
+                sa[i]++;
             }
         }
-        result = vc;
+
+        int current = 0;
+        int result = 0;
+        for (int i = 0; i < k; i++) {
+            current += sa[i];
+        }
+        result = current;
 
         int l = 0;
-        for (int r = k; r < s.length(); r++) {
-            if (vowels.contains(s.charAt(l++))) {
-                vc--;
-            }
-            if (vowels.contains(s.charAt(r))) {
-                vc++;
-            }
+        for (int r = k; r < sa.length; r++) {
+            current = current - sa[l++] + sa[r];
 
-            if (result < vc) {
-                result = vc;
+            if (current > result) {
+                result = current;
             }
         }
 
