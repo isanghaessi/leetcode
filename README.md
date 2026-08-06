@@ -15,6 +15,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0345-reverse-vowels-of-a-string](https://github.com/isanghaessi/leetcode/tree/main/0345-reverse-vowels-of-a-string/) | Easy |
 | [0392-is-subsequence](https://github.com/isanghaessi/leetcode/tree/main/0392-is-subsequence/) | Easy |
 | [0443-string-compression](https://github.com/isanghaessi/leetcode/tree/main/0443-string-compression/) | Medium |
+| [1679-max-number-of-k-sum-pairs](https://github.com/isanghaessi/leetcode/tree/main/1679-max-number-of-k-sum-pairs/) | Medium |
 | [1768-merge-strings-alternately](https://github.com/isanghaessi/leetcode/tree/main/1768-merge-strings-alternately/) | Easy |
 ## String
 | Problem Name | Difficulty |
@@ -57,6 +58,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0875-koko-eating-bananas](https://github.com/isanghaessi/leetcode/tree/main/0875-koko-eating-bananas/) | Medium |
 | [1431-kids-with-the-greatest-number-of-candies](https://github.com/isanghaessi/leetcode/tree/main/1431-kids-with-the-greatest-number-of-candies/) | Easy |
 | [1514-path-with-maximum-probability](https://github.com/isanghaessi/leetcode/tree/main/1514-path-with-maximum-probability/) | Medium |
+| [1679-max-number-of-k-sum-pairs](https://github.com/isanghaessi/leetcode/tree/main/1679-max-number-of-k-sum-pairs/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -66,12 +68,14 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0049-group-anagrams](https://github.com/isanghaessi/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0133-clone-graph](https://github.com/isanghaessi/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [1657-determine-if-two-strings-are-close](https://github.com/isanghaessi/leetcode/tree/main/1657-determine-if-two-strings-are-close/) | Medium |
+| [1679-max-number-of-k-sum-pairs](https://github.com/isanghaessi/leetcode/tree/main/1679-max-number-of-k-sum-pairs/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0049-group-anagrams](https://github.com/isanghaessi/leetcode/tree/main/0049-group-anagrams/) | Medium |
 | [0435-non-overlapping-intervals](https://github.com/isanghaessi/leetcode/tree/main/0435-non-overlapping-intervals/) | Medium |
 | [1657-determine-if-two-strings-are-close](https://github.com/isanghaessi/leetcode/tree/main/1657-determine-if-two-strings-are-close/) | Medium |
+| [1679-max-number-of-k-sum-pairs](https://github.com/isanghaessi/leetcode/tree/main/1679-max-number-of-k-sum-pairs/) | Medium |
 ## Dynamic Programming
 | Problem Name | Difficulty |
 | ------- | ------- |
