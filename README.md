@@ -65,6 +65,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1514-path-with-maximum-probability](https://github.com/isanghaessi/leetcode/tree/main/1514-path-with-maximum-probability/) | Medium |
 | [1679-max-number-of-k-sum-pairs](https://github.com/isanghaessi/leetcode/tree/main/1679-max-number-of-k-sum-pairs/) | Medium |
 | [1732-find-the-highest-altitude](https://github.com/isanghaessi/leetcode/tree/main/1732-find-the-highest-altitude/) | Easy |
+| [2215-find-the-difference-of-two-arrays](https://github.com/isanghaessi/leetcode/tree/main/2215-find-the-difference-of-two-arrays/) | Easy |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -75,6 +76,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0133-clone-graph](https://github.com/isanghaessi/leetcode/tree/main/0133-clone-graph/) | Medium |
 | [1657-determine-if-two-strings-are-close](https://github.com/isanghaessi/leetcode/tree/main/1657-determine-if-two-strings-are-close/) | Medium |
 | [1679-max-number-of-k-sum-pairs](https://github.com/isanghaessi/leetcode/tree/main/1679-max-number-of-k-sum-pairs/) | Medium |
+| [2215-find-the-difference-of-two-arrays](https://github.com/isanghaessi/leetcode/tree/main/2215-find-the-difference-of-two-arrays/) | Easy |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
