@@ -13,7 +13,6 @@ class Solution {
         right[0] = right[1];
 
         for (int i = 1; i <= nums.length; i++) {
-            System.out.println(left[i - 1] + " " + right[i + 1]);
             if (left[i - 1] == right[i + 1]) {
                 return i - 1;
             }
