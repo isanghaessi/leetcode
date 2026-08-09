@@ -56,6 +56,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0605-can-place-flowers](https://github.com/isanghaessi/leetcode/tree/main/0605-can-place-flowers/) | Easy |
 | [0643-maximum-average-subarray-i](https://github.com/isanghaessi/leetcode/tree/main/0643-maximum-average-subarray-i/) | Easy |
 | [0704-binary-search](https://github.com/isanghaessi/leetcode/tree/main/0704-binary-search/) | Easy |
+| [0724-find-pivot-index](https://github.com/isanghaessi/leetcode/tree/main/0724-find-pivot-index/) | Easy |
 | [0733-flood-fill](https://github.com/isanghaessi/leetcode/tree/main/0733-flood-fill/) | Easy |
 | [0875-koko-eating-bananas](https://github.com/isanghaessi/leetcode/tree/main/0875-koko-eating-bananas/) | Medium |
 | [1004-max-consecutive-ones-iii](https://github.com/isanghaessi/leetcode/tree/main/1004-max-consecutive-ones-iii/) | Medium |
@@ -213,6 +214,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0238-product-of-array-except-self](https://github.com/isanghaessi/leetcode/tree/main/0238-product-of-array-except-self/) | Medium |
+| [0724-find-pivot-index](https://github.com/isanghaessi/leetcode/tree/main/0724-find-pivot-index/) | Easy |
 | [1004-max-consecutive-ones-iii](https://github.com/isanghaessi/leetcode/tree/main/1004-max-consecutive-ones-iii/) | Medium |
 | [1732-find-the-highest-altitude](https://github.com/isanghaessi/leetcode/tree/main/1732-find-the-highest-altitude/) | Easy |
 ## Longest Increasing Subsequence
