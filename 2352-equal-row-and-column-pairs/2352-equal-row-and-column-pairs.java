@@ -15,7 +15,7 @@ class Solution {
             rowCounter.put(key, value);
         }
 
-        Map<String, Integer> colCounter = new HashMap<>();
+        int result = 0;
 
         for (int i = 0; i < grid.length; i++) {
             StringBuilder sb = new StringBuilder();
@@ -26,16 +26,9 @@ class Solution {
             }
 
             String key = sb.toString();
-            int value = colCounter.getOrDefault(key, 0) + 1;
-            colCounter.put(key, value);
-        }
-
-        int result = 0;
-
-        Set<String> colKeys = colCounter.keySet();
-        for (String rowKey : rowCounter.keySet()) {
-            if (colKeys.contains(rowKey)) {
-                result += rowCounter.get(rowKey) * colCounter.get(rowKey);
+            
+            if (rowCounter.containsKey(key)) {
+                result += rowCounter.get(key);
             }
         }
 
