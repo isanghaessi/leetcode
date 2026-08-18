@@ -67,6 +67,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1679-max-number-of-k-sum-pairs](https://github.com/isanghaessi/leetcode/tree/main/1679-max-number-of-k-sum-pairs/) | Medium |
 | [1732-find-the-highest-altitude](https://github.com/isanghaessi/leetcode/tree/main/1732-find-the-highest-altitude/) | Easy |
 | [2215-find-the-difference-of-two-arrays](https://github.com/isanghaessi/leetcode/tree/main/2215-find-the-difference-of-two-arrays/) | Easy |
+| [2352-equal-row-and-column-pairs](https://github.com/isanghaessi/leetcode/tree/main/2352-equal-row-and-column-pairs/) | Medium |
 ## Hash Table
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -79,6 +80,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [1657-determine-if-two-strings-are-close](https://github.com/isanghaessi/leetcode/tree/main/1657-determine-if-two-strings-are-close/) | Medium |
 | [1679-max-number-of-k-sum-pairs](https://github.com/isanghaessi/leetcode/tree/main/1679-max-number-of-k-sum-pairs/) | Medium |
 | [2215-find-the-difference-of-two-arrays](https://github.com/isanghaessi/leetcode/tree/main/2215-find-the-difference-of-two-arrays/) | Easy |
+| [2352-equal-row-and-column-pairs](https://github.com/isanghaessi/leetcode/tree/main/2352-equal-row-and-column-pairs/) | Medium |
 ## Sorting
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -137,6 +139,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | [0054-spiral-matrix](https://github.com/isanghaessi/leetcode/tree/main/0054-spiral-matrix/) | Medium |
 | [0200-number-of-islands](https://github.com/isanghaessi/leetcode/tree/main/0200-number-of-islands/) | Medium |
 | [0733-flood-fill](https://github.com/isanghaessi/leetcode/tree/main/0733-flood-fill/) | Easy |
+| [2352-equal-row-and-column-pairs](https://github.com/isanghaessi/leetcode/tree/main/2352-equal-row-and-column-pairs/) | Medium |
 ## Math
 | Problem Name | Difficulty |
 | ------- | ------- |
@@ -148,6 +151,7 @@ Collection of LeetCode questions to ace the coding interview! - Created using [L
 | Problem Name | Difficulty |
 | ------- | ------- |
 | [0054-spiral-matrix](https://github.com/isanghaessi/leetcode/tree/main/0054-spiral-matrix/) | Medium |
+| [2352-equal-row-and-column-pairs](https://github.com/isanghaessi/leetcode/tree/main/2352-equal-row-and-column-pairs/) | Medium |
 | [2390-removing-stars-from-a-string](https://github.com/isanghaessi/leetcode/tree/main/2390-removing-stars-from-a-string/) | Medium |
 ## Graph Theory
 | Problem Name | Difficulty |
