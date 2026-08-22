@@ -1,8 +1,8 @@
 class Solution {
     public int[] asteroidCollision(int[] asteroids) {
-        List<Integer> prevResult = collide(asteroids);
+        List<Integer> prevResult = collide(Arrays.stream(asteroids).boxed().toList());
         while (true) {
-            List<Integer> nextResult = collide(prevResult.stream().mapToInt(value -> value).toArray());
+            List<Integer> nextResult = collide(prevResult);
 
             if (prevResult.equals(nextResult)) {
                 return prevResult.stream().mapToInt(value -> value).toArray();
@@ -12,20 +12,20 @@ class Solution {
         }
     }
 
-    private List<Integer> collide(int[] asteroids) {
+    private List<Integer> collide(List<Integer> asteroids) {
         List<Integer> result = new ArrayList<>();
 
         int i = 0;
-        while (i < asteroids.length) {
+        while (i < asteroids.size()) {
             List<Integer> rights = new ArrayList<>();
-            while (i < asteroids.length && asteroids[i] > 0) {
-                rights.add(asteroids[i]);
+            while (i < asteroids.size() && asteroids.get(i) > 0) {
+                rights.add(asteroids.get(i));
                 i++;
             }
 
             List<Integer> lefts = new ArrayList<>();
-            while (i < asteroids.length && asteroids[i] < 0) {
-                lefts.add(asteroids[i]);
+            while (i < asteroids.size() && asteroids.get(i) < 0) {
+                lefts.add(asteroids.get(i));
                 i++;
             }
 
